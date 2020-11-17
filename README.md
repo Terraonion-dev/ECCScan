@@ -1,7 +1,10 @@
 # ECCScan
 Playstation 1 Error Correction Codes scanner and fixer
+
 This tool will allow scanning a Playstation 1 game disc dump with mode 2 tracks, dumped in raw sector mode (2352 bytes per sector) and check if Error Detection Code and Error Correction codes match. 
+
 Also, it allows fixing them so they match the data section of the sector. This allows some game translation patches to work in real hardware, as they only patch the data and don't patch the error correction codes, making the real hardware reject them as if the cd was scratched.
+
 MODE PSX optical disc emulator can do this fixes on the fly, with the "Fix Disc ECC" Option, but the extra time needed to correct them can cause issues in slow media, so using this tool makes the image already correct, not requiring the on the fly correction. Also makes the image compatible with other ODE solutions.
 
 **USAGE**
